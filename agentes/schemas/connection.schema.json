@@ -1,0 +1,98 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "kind": {
+      "const": "connection"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "const": "planned"
+    },
+    "enabled": {
+      "const": false
+    },
+    "services": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "transport": {
+      "type": "string",
+      "enum": [
+        "unselected",
+        "local",
+        "mcp-or-api"
+      ]
+    },
+    "auth": {
+      "type": "object",
+      "properties": {
+        "provider": {
+          "const": "disabled"
+        },
+        "secret_ref": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "provider",
+        "secret_ref"
+      ],
+      "additionalProperties": false
+    },
+    "scopes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "data_classification": {
+      "type": "string",
+      "enum": [
+        "private",
+        "restricted"
+      ]
+    },
+    "approval_required": {
+      "const": true
+    },
+    "notes": {
+      "type": "string",
+      "minLength": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "id",
+    "name",
+    "status",
+    "enabled",
+    "services",
+    "transport",
+    "auth",
+    "scopes",
+    "data_classification",
+    "approval_required",
+    "notes"
+  ],
+  "additionalProperties": false
+}

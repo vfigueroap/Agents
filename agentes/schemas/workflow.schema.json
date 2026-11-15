@@ -1,0 +1,120 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "kind": {
+      "const": "workflow"
+    },
+    "id": {
+      "type": "string",
+      "minLength": 1,
+      "pattern": "^[a-z][a-z0-9-]*$"
+    },
+    "name": {
+      "type": "string",
+      "minLength": 1
+    },
+    "status": {
+      "type": "string",
+      "enum": [
+        "local_demo",
+        "planned"
+      ]
+    },
+    "description": {
+      "type": "string",
+      "minLength": 1
+    },
+    "trigger": {
+      "const": "manual"
+    },
+    "automatic_start": {
+      "const": false
+    },
+    "scheduler": {
+      "type": "null"
+    },
+    "max_steps": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 10
+    },
+    "steps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "agent": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "tool": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "input": {
+            "type": "object",
+            "additionalProperties": true
+          },
+          "input_from": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "agent",
+          "tool",
+          "input",
+          "input_from"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 1,
+      "maxItems": 10
+    },
+    "expected": {
+      "type": "object",
+      "properties": {
+        "classification": {
+          "const": "synthetic"
+        },
+        "total": {
+          "type": "number"
+        }
+      },
+      "required": [
+        "classification",
+        "total"
+      ],
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "id",
+    "name",
+    "status",
+    "description",
+    "trigger",
+    "automatic_start",
+    "scheduler",
+    "max_steps",
+    "steps",
+    "expected"
+  ],
+  "additionalProperties": false
+}

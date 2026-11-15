@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "kind": "tool",
+  "id": "document-export",
+  "name": "Exportar documentos",
+  "status": "planned",
+  "description": "Interfaz candidata sin implementación; no puede ejecutarse ni recibir permisos en esta fase.",
+  "action": "documents.write",
+  "implementation": null,
+  "execution": "external",
+  "inputs": "schemas/action-request.schema.json",
+  "outputs": "schemas/task-result.schema.json",
+  "permissions": [
+    "documents.write"
+  ],
+  "connections": [],
+  "side_effects": "external",
+  "approval": "unavailable"
+}

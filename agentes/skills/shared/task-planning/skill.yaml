@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "kind": "skill",
+  "id": "task-planning",
+  "name": "Planificar tareas",
+  "group": "shared",
+  "status": "implemented",
+  "description": "Transformar un objetivo en un plan con límites y dependencias.",
+  "instructions": "skills/shared/task-planning/SKILL.md",
+  "tools": [],
+  "connections": [],
+  "dependencies": [],
+  "evaluation": [
+    "Salida trazable con supuestos explícitos",
+    "Respeto de los límites de ejecución",
+    "Diferenciar plan y resultado verificado"
+  ]
+}

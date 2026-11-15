@@ -1,0 +1,81 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "kind": {
+      "const": "adapter"
+    },
+    "runtime": {
+      "type": "string",
+      "enum": [
+        "codex",
+        "cursor",
+        "claude-code",
+        "hermes"
+      ]
+    },
+    "status": {
+      "const": "export_only"
+    },
+    "mechanism": {
+      "type": "string",
+      "minLength": 1
+    },
+    "implemented": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    },
+    "external_dependencies": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "pending": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "verified_in_runtime": {
+      "const": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true
+    },
+    "reviewed_on": {
+      "const": "2026-11-14"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "runtime",
+    "status",
+    "mechanism",
+    "implemented",
+    "external_dependencies",
+    "pending",
+    "verified_in_runtime",
+    "sources",
+    "reviewed_on"
+  ],
+  "additionalProperties": false
+}

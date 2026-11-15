@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "kind": "tool",
+  "id": "fixture-read",
+  "name": "Leer datos ficticios",
+  "status": "implemented",
+  "description": "Lee únicamente JSON bajo examples/fixtures; rechaza enlaces y clasificaciones no sintéticas.",
+  "action": "files.read_fixture",
+  "implementation": "fixture-read",
+  "execution": "local",
+  "inputs": "schemas/fixture-input.schema.json",
+  "outputs": "schemas/fixture-output.schema.json",
+  "permissions": [
+    "files.read_fixture"
+  ],
+  "connections": [],
+  "side_effects": "none",
+  "approval": "not_required"
+}

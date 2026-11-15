@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0",
+  "kind": "skill",
+  "id": "demo-review",
+  "name": "Revisión ficticia",
+  "group": "shared",
+  "status": "implemented",
+  "description": "Revisar coherencia de un borrador ficticio.",
+  "instructions": "templates/skill/SKILL.md",
+  "tools": [],
+  "connections": [],
+  "dependencies": [],
+  "evaluation": [
+    "Observaciones sustentadas en el borrador"
+  ]
+}

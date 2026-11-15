@@ -1,0 +1,54 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "kind": {
+      "const": "router"
+    },
+    "fallback": {
+      "const": "orchestrator"
+    },
+    "routes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "agent": {
+            "type": "string",
+            "minLength": 1,
+            "pattern": "^[a-z][a-z0-9-]*$"
+          },
+          "keywords": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "uniqueItems": true,
+            "minItems": 1
+          }
+        },
+        "required": [
+          "agent",
+          "keywords"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 10
+    },
+    "ambiguity": {
+      "const": "return_candidates"
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "fallback",
+    "routes",
+    "ambiguity"
+  ],
+  "additionalProperties": false
+}

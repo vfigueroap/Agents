@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0",
+  "kind": "connection",
+  "id": "garmin",
+  "name": "Garmin",
+  "status": "planned",
+  "enabled": false,
+  "services": [
+    "Actividad física y bienestar"
+  ],
+  "transport": "unselected",
+  "auth": {
+    "provider": "disabled",
+    "secret_ref": null
+  },
+  "scopes": [],
+  "data_classification": "private",
+  "approval_required": true,
+  "notes": "Conexión prevista; sin endpoint, credenciales, instalación ni permisos efectivos. Lectura futura no habilita escritura ni operaciones."
+}

@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "kind": "adapter",
+  "runtime": "hermes",
+  "status": "export_only",
+  "mechanism": "Generar bundle.md neutral, skills seleccionadas y manifiesto de hashes; importación Hermes sin implementar.",
+  "implemented": ["Bundle neutral offline", "Comprobación de fuentes y salidas", "Índice de skills bajo demanda"],
+  "external_dependencies": ["Evaluación de versión y contrato de instrucciones de Hermes"],
+  "pending": ["Elegir e implementar importación compatible", "Prueba real de carga", "Orquestación multiproceso", "Mapeo de herramientas, hooks y permisos externos"],
+  "verified_in_runtime": false,
+  "sources": ["https://hermes-agent.nousresearch.com/docs/user-guide/features/skills"],
+  "reviewed_on": "2026-11-14"
+}

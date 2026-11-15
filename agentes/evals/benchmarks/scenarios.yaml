@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "kind": "evaluation",
+  "id": "benchmarks-baseline",
+  "category": "benchmarks",
+  "status": "scenario_defined",
+  "cases": [
+    {
+      "id": "baseline",
+      "request": "Ejecutar demo con datos ficticios.",
+      "expected": "Total 180, cero conexiones y cero llamadas a modelos.",
+      "automated": true
+    },
+    {
+      "id": "future-quality",
+      "request": "Comparar agente único con delegación.",
+      "expected": "Medir calidad, precisión, costo, latencia, seguridad y confiabilidad; aún no ejecutado.",
+      "automated": false
+    }
+  ]
+}

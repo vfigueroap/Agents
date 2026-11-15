@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "kind": "tool",
+  "id": "demo-tool",
+  "name": "Herramienta ficticia pendiente",
+  "status": "planned",
+  "description": "Sustituir por un contrato y ejecutor revisados antes de registrar.",
+  "action": "demo.review",
+  "implementation": null,
+  "execution": "external",
+  "inputs": "schemas/action-request.schema.json",
+  "outputs": "schemas/task-result.schema.json",
+  "permissions": [
+    "demo.review"
+  ],
+  "connections": [],
+  "side_effects": "external",
+  "approval": "unavailable"
+}

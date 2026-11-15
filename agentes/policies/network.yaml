@@ -1,0 +1,8 @@
+{
+  "schema_version": "1.0",
+  "kind": "network",
+  "enabled": false,
+  "default": "deny",
+  "allowed_hosts": [],
+  "notes": "El dispatcher no implementa red. Los runtimes externos requieren su propio aislamiento y control de egreso."
+}

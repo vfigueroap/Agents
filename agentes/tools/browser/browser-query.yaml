@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "kind": "tool",
+  "id": "browser-query",
+  "name": "Navegador",
+  "status": "planned",
+  "description": "Interfaz candidata sin implementación; no puede ejecutarse ni recibir permisos en esta fase.",
+  "action": "network.browser",
+  "implementation": null,
+  "execution": "external",
+  "inputs": "schemas/action-request.schema.json",
+  "outputs": "schemas/task-result.schema.json",
+  "permissions": [
+    "network.browser"
+  ],
+  "connections": [],
+  "side_effects": "external",
+  "approval": "unavailable"
+}

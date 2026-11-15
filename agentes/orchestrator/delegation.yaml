@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "kind": "delegation",
+  "max_depth": 2,
+  "max_tasks": 10,
+  "max_parallel": 2,
+  "timeout_seconds": 60,
+  "cost_budget_units": 0,
+  "automatic_start": false,
+  "inherit_permissions": false,
+  "require_task_id": true,
+  "stop_conditions": [
+    "Criterio de aceptación satisfecho",
+    "Falta dato, permiso o herramienta",
+    "Presupuesto o plazo agotado",
+    "Dependencia fallida o task_id duplicado"
+  ]
+}

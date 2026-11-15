@@ -1,0 +1,37 @@
+# Proyectos y materiales locales fuera de Agents
+/Guia/
+/privado/
+/floorplan/
+/contextomaestrodelproyecto.md
+/Abogado en practica/
+/Administrador de sistemas/
+/Compañero de Universidad/
+/Desarrollador de software/
+/Emprendedor-Builder/
+/Ingeniero/
+/Marketero/
+/Profesor-Tutor/
+
+# Credenciales, datos y productos derivados
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*
+secrets/
+private/
+data/
+state/
+logs/
+backups/
+*.sqlite*
+*.db
+node_modules/
+coverage/
+generated/
+.test-tmp/
+*.log
+.DS_Store
+Thumbs.db

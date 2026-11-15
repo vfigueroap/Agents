@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "kind": "skill",
+  "id": "sales-planning",
+  "name": "Planificación comercial",
+  "group": "commercial",
+  "status": "implemented",
+  "description": "Organizar oportunidades y propuestas con clientes ficticios.",
+  "instructions": "skills/commercial/sales-planning/SKILL.md",
+  "tools": [],
+  "connections": [],
+  "dependencies": [],
+  "evaluation": [
+    "Salida trazable con supuestos explícitos",
+    "Respeto de los límites de ejecución",
+    "Diferenciar plan y resultado verificado"
+  ]
+}

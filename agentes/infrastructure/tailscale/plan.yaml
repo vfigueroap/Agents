@@ -1,0 +1,24 @@
+{
+  "schema_version": "1.0",
+  "kind": "configuration",
+  "area": "tailscale",
+  "status": "planned",
+  "description": "Red privada contemplada sin cambios de red.",
+  "entries": [
+    {
+      "key": "status",
+      "value": "not verified / not configured by this phase",
+      "status": "pending"
+    },
+    {
+      "key": "access",
+      "value": "device inventory, ACLs and authenticated identities pending",
+      "status": "pending"
+    },
+    {
+      "key": "public_exposure",
+      "value": "disabled",
+      "status": "conservative_default"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "kind": {
+      "const": "hooks"
+    },
+    "events": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": {
+            "type": "string",
+            "enum": [
+              "pre-tool",
+              "post-tool",
+              "on-error",
+              "audit",
+              "pre-network",
+              "approval",
+              "pre-commit"
+            ]
+          },
+          "status": {
+            "type": "string",
+            "enum": [
+              "implemented_local",
+              "script_available",
+              "planned"
+            ]
+          },
+          "handler": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "name",
+          "status",
+          "handler"
+        ],
+        "additionalProperties": false
+      },
+      "minItems": 7
+    },
+    "external_runtime_hooks": {
+      "const": false
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "events",
+    "external_runtime_hooks"
+  ],
+  "additionalProperties": false
+}

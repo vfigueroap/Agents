@@ -1,0 +1,13 @@
+{
+  "schema_version": "1.0",
+  "kind": "adapter",
+  "runtime": "cursor",
+  "status": "export_only",
+  "mechanism": "Generar .cursor/rules/project.mdc, skills seleccionadas y manifiesto de hashes dentro de generated/.",
+  "implemented": ["Exportación offline", "Frontmatter description y alwaysApply", "Comprobación de fuentes y salidas"],
+  "external_dependencies": ["Versión instalada de Cursor con reglas .mdc"],
+  "pending": ["Prueba real de carga", "Descubrimiento nativo de skills", "Mapeo de herramientas, hooks y permisos externos"],
+  "verified_in_runtime": false,
+  "sources": ["https://cursor.com/docs/rules"],
+  "reviewed_on": "2026-11-14"
+}

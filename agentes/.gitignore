@@ -1,0 +1,23 @@
+# Secretos y estado privado: nunca versionar
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+credentials*
+secrets/
+private/
+data/
+state/
+logs/
+backups/
+*.sqlite*
+*.db
+node_modules/
+coverage/
+generated/
+.test-tmp/
+*.log
+.DS_Store
+Thumbs.db

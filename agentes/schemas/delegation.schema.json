@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": "1.0"
+    },
+    "kind": {
+      "const": "delegation"
+    },
+    "max_depth": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 2
+    },
+    "max_tasks": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 10
+    },
+    "max_parallel": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2
+    },
+    "timeout_seconds": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 60
+    },
+    "cost_budget_units": {
+      "const": 0
+    },
+    "automatic_start": {
+      "const": false
+    },
+    "inherit_permissions": {
+      "const": false
+    },
+    "require_task_id": {
+      "const": true
+    },
+    "stop_conditions": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 1
+    }
+  },
+  "required": [
+    "schema_version",
+    "kind",
+    "max_depth",
+    "max_tasks",
+    "max_parallel",
+    "timeout_seconds",
+    "cost_budget_units",
+    "automatic_start",
+    "inherit_permissions",
+    "require_task_id",
+    "stop_conditions"
+  ],
+  "additionalProperties": false
+}

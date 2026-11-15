@@ -1,0 +1,29 @@
+{
+  "schema_version": "1.0",
+  "kind": "configuration",
+  "area": "environment-local",
+  "status": "declarative",
+  "description": "Validación y simulación offline.",
+  "entries": [
+    {
+      "key": "network",
+      "value": "disabled",
+      "status": "conservative_default"
+    },
+    {
+      "key": "secrets",
+      "value": "none",
+      "status": "conservative_default"
+    },
+    {
+      "key": "fixtures",
+      "value": "examples/fixtures",
+      "status": "conservative_default"
+    },
+    {
+      "key": "services",
+      "value": "not started",
+      "status": "conservative_default"
+    }
+  ]
+}

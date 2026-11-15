@@ -1,0 +1,19 @@
+{
+  "schema_version": "1.0",
+  "kind": "tool",
+  "id": "summarize-records",
+  "name": "Resumir registros ficticios",
+  "status": "implemented",
+  "description": "Suma de hasta cien valores ficticios; sin red ni escritura.",
+  "action": "analysis.summarize",
+  "implementation": "summarize-records",
+  "execution": "local",
+  "inputs": "schemas/summary-input.schema.json",
+  "outputs": "schemas/summary-output.schema.json",
+  "permissions": [
+    "analysis.summarize"
+  ],
+  "connections": [],
+  "side_effects": "none",
+  "approval": "not_required"
+}

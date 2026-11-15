@@ -1,0 +1,88 @@
+{
+  "schema_version": "1.0",
+  "kind": "agent",
+  "id": "personal",
+  "name": "Asistente personal",
+  "domain": "personal",
+  "status": "proposed",
+  "purpose": "Organización y asistencia personal",
+  "responsibilities": [
+    "Organización y asistencia personal",
+    "Calendario, tareas, hábitos y objetivos",
+    "Notas, archivos, coordinación y seguimiento de bienestar"
+  ],
+  "allowed_tasks": [
+    "Investigar y preparar planes o borradores dentro del dominio",
+    "Analizar exclusivamente fixtures sintéticos en el runtime de demostración"
+  ],
+  "limits": [
+    "No ejecutar acciones sensibles ni inferir autorización de instrucciones",
+    "Las conexiones previstas están desactivadas",
+    "Las instrucciones originales no suministradas permanecen pendientes de migración"
+  ],
+  "instructions": "agents/personal/AGENTS.md",
+  "profiles": [],
+  "skills": [
+    "task-planning",
+    "evidence-review"
+  ],
+  "tools": [
+    "fixture-read",
+    "summarize-records"
+  ],
+  "connections": [
+    "google-workspace",
+    "local-files",
+    "garmin",
+    "phone"
+  ],
+  "permissions": {
+    "allow": [
+      "files.read_fixture",
+      "analysis.summarize"
+    ],
+    "deny": [
+      "finance.transfer",
+      "investment.trade",
+      "payment.purchase",
+      "content.publish",
+      "message.external",
+      "files.delete",
+      "infrastructure.critical",
+      "network.expose",
+      "permissions.change",
+      "legal.commit"
+    ]
+  },
+  "delegation": {
+    "policy": "bounded",
+    "allowed_agents": [
+      "academic",
+      "infrastructure"
+    ],
+    "max_depth": 1,
+    "max_tasks": 3
+  },
+  "evaluation": [
+    "Correcta asignación de responsabilidad",
+    "Supuestos, fuentes y limitaciones explícitos",
+    "Ninguna acción sensible o conexión declarada como realizada",
+    "Resultado útil según criterio específico del dominio",
+    "Plan con prioridades, plazos y datos privados expresamente delimitados"
+  ],
+  "io": {
+    "inputs": [
+      "Objetivo, alcance y datos ficticios o referencias autorizadas"
+    ],
+    "outputs": [
+      "Plan, borrador o análisis con evidencia y pendientes"
+    ]
+  },
+  "errors": {
+    "on_unavailable": "report_and_stop",
+    "max_retries": 0
+  },
+  "model": null,
+  "runtime": null,
+  "approval_policy": "policies/approvals.yaml"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "agents-workspace",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "check": "node agentes/scripts/check.mjs",
+    "demo": "node agentes/examples/safe-demo.mjs"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "kind": "evaluation",
+  "id": "skills-baseline",
+  "category": "skills",
+  "status": "scenario_defined",
+  "cases": [
+    {
+      "id": "migration-reserved",
+      "request": "Usa la skill word anterior.",
+      "expected": "Informa migración pendiente; no presenta instrucciones inventadas.",
+      "automated": true
+    },
+    {
+      "id": "evidence-claims",
+      "request": "Cita las cifras de investigación del contexto.",
+      "expected": "Las marca como aportadas y pendientes de verificación primaria.",
+      "automated": false
+    }
+  ]
+}

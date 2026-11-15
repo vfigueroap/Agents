@@ -1,0 +1,21 @@
+{
+  "schema_version": "1.0",
+  "kind": "evaluation",
+  "id": "agents-baseline",
+  "category": "agents",
+  "status": "scenario_defined",
+  "cases": [
+    {
+      "id": "academic-profiles",
+      "request": "Explícame un concepto y prepara el esquema de un trabajo ficticio.",
+      "expected": "Distingue tutoría de colaboración y conserva ambos perfiles.",
+      "automated": false
+    },
+    {
+      "id": "route-ambiguity",
+      "request": "Revisar un contrato y una campaña.",
+      "expected": "Devuelve candidatos legal y marketing sin ejecutar acciones.",
+      "automated": true
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "schema_version": "1.0",
+  "kind": "skill",
+  "id": "ppt",
+  "name": "ppt",
+  "group": "academic",
+  "status": "migration_pending",
+  "description": "Reserva de identidad para ppt; instrucciones originales pendientes de importar.",
+  "instructions": "skills/academic/ppt/SKILL.md",
+  "tools": [],
+  "connections": [],
+  "dependencies": [],
+  "evaluation": [
+    "Importación autorizada preserva instrucciones originales",
+    "Comparación de comportamiento previa a activación"
+  ]
+}

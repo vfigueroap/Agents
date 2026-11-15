@@ -1,0 +1,18 @@
+{
+  "schema_version": "1.0",
+  "kind": "skill",
+  "id": "financial-analysis",
+  "name": "Análisis financiero",
+  "group": "finance",
+  "status": "implemented",
+  "description": "Comparar escenarios financieros ficticios sin operar cuentas.",
+  "instructions": "skills/finance/financial-analysis/SKILL.md",
+  "tools": [],
+  "connections": [],
+  "dependencies": [],
+  "evaluation": [
+    "Salida trazable con supuestos explícitos",
+    "Respeto de los límites de ejecución",
+    "Diferenciar plan y resultado verificado"
+  ]
+}

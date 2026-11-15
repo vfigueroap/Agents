@@ -1,0 +1,17 @@
+{
+  "classification": "synthetic",
+  "records": [
+    {
+      "label": "Proyecto ficticio Aurora",
+      "value": 125
+    },
+    {
+      "label": "Proyecto ficticio Faro",
+      "value": 75
+    },
+    {
+      "label": "Ajuste ficticio",
+      "value": -20
+    }
+  ]
+}
