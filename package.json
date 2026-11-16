@@ -1,11 +1,18 @@
 {
-  "name": "agents-workspace",
-  "version": "0.1.0",
+  "name": "agentes-personales",
   "private": true,
   "type": "module",
-  "engines": { "node": ">=22" },
+  "engines": {
+    "node": ">=22"
+  },
   "scripts": {
-    "check": "node agentes/scripts/check.mjs",
-    "demo": "node agentes/examples/safe-demo.mjs"
+    "test": "node --test herramientas/*.test.mjs",
+    "check": "node herramientas/agentes.mjs validar",
+    "codex:sync": "node herramientas/sincronizar-codex.mjs",
+    "codex:check": "node herramientas/sincronizar-codex.mjs --check",
+    "homelab:check": "node herramientas/homelab.mjs check",
+    "dashboard:validate": "node herramientas/dashboard.mjs validate",
+    "dashboard:publish": "node herramientas/dashboard.mjs publish",
+    "telemetry": "node herramientas/telemetria.mjs collect"
   }
 }

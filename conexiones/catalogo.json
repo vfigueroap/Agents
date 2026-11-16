@@ -1,0 +1,156 @@
+{
+  "fecha": "2026-11-15",
+  "advertencia": "Inventario histórico de plugins Codex al 2026-11-15; no contiene secretos ni comparte autenticación con Hermes. runtime_hermes documenta preparación separada, sin afirmar conexiones activas en el HP.",
+  "runtime_hermes": {
+    "fecha": "2026-11-16",
+    "estado": "codigo-preparado-sin-autenticacion-en-hp",
+    "guia": "homelab/README.md",
+    "datos": "Originales, credenciales y sesiones locales; solo resúmenes, métricas y referencias privadas en Supabase a través del worker.",
+    "servicios": [
+      { "id": "hermes", "estado": "preparacion-implementada", "alcance": "Perfiles personal, finanzas y sistema; gateway y login oficial pendientes en Ubuntu." },
+      { "id": "openai-subscription", "estado": "login-pendiente", "alcance": "Proveedor openai-codex mediante ChatGPT/Codex Subscription; sin fallback API facturable." },
+      { "id": "personal-os", "estado": "bridge-implementado", "alcance": "Entregas JSON locales v1; la publicación cloud requiere el worker autorizado." },
+      { "id": "telegram", "estado": "configuracion-pendiente", "alcance": "Gateway personal, usuario y chat autorizados. Worker opcional con otro bot/token." },
+      { "id": "gmail", "estado": "autenticacion-pendiente", "alcance": "Worker en lectura, etiquetas y remitentes autorizados; originales locales." },
+      { "id": "google-calendar", "estado": "autenticacion-pendiente", "alcance": "Lectura del calendario existente; ninguna agenda nueva ni escritura automática." },
+      { "id": "tailscale", "estado": "consulta-implementada-sin-prueba-en-hp", "alcance": "Conectividad observada; no concede SSH, acceso a archivos ni telemetría interna de otros nodos." },
+      { "id": "nextcloud", "estado": "pendiente-verificacion" },
+      { "id": "immich", "estado": "pendiente-verificacion" },
+      { "id": "canvas", "estado": "pendiente-verificacion" },
+      { "id": "docenciaweb", "estado": "pendiente-verificacion" },
+      { "id": "racional", "estado": "pendiente-verificacion-solo-lectura" },
+      { "id": "binance", "estado": "pendiente-verificacion-solo-lectura" },
+      { "id": "interactive-brokers", "estado": "pendiente-verificacion-solo-lectura" },
+      { "id": "banco-de-chile", "estado": "captura-email-preparada-sin-autenticar", "alcance": "Notificaciones como evidencia; no acceso bancario ni saldo supuesto." },
+      { "id": "mercadopago", "estado": "captura-email-preparada-sin-autenticar" },
+      { "id": "github", "estado": "worker-candidato-requiere-autenticacion-propia" },
+      { "id": "linkedin", "estado": "pendiente-verificacion" },
+      { "id": "youtube", "estado": "pendiente-verificacion" },
+      { "id": "medium", "estado": "pendiente-verificacion" },
+      { "id": "luma", "estado": "pendiente-verificacion" },
+      { "id": "instagram", "estado": "pendiente-verificacion" },
+      { "id": "x", "estado": "pendiente-verificacion" },
+      { "id": "shopify", "estado": "pendiente-verificacion" },
+      { "id": "mercadolibre", "estado": "pendiente-verificacion" },
+      { "id": "meta-ads", "estado": "pendiente-verificacion-solo-lectura" },
+      { "id": "tiktok-ads", "estado": "pendiente-verificacion-solo-lectura" },
+      { "id": "google-ads", "estado": "pendiente-verificacion-solo-lectura" },
+      { "id": "google-maps", "estado": "pendiente-verificacion", "alcance": "Propuestas y enlaces de ruta; no acciones automáticas." },
+      { "id": "waze", "estado": "pendiente-verificacion" },
+      { "id": "whatsapp", "estado": "fuera-v1", "alcance": "Modalidad personal no oficial con riesgo de restricciones; Business Cloud API tiene requisitos distintos." },
+      { "id": "codex-cli", "estado": "instalacion-y-login-pendientes-en-hp" },
+      { "id": "claude-code", "estado": "instalacion-y-login-pendientes-en-hp" },
+      { "id": "cursor", "estado": "ejecucion-no-verificada" }
+    ]
+  },
+  "conexiones": [
+    {
+      "id": "archivos-locales",
+      "tipo": "filesystem",
+      "estado": "lectura-verificada",
+      "alcance": "Proyecto y rutas pertinentes al encargo, con permisos del host."
+    },
+    {
+      "id": "github",
+      "tipo": "plugin-conectado",
+      "estado": "perfil-verificado",
+      "prueba": "Consulta de perfil de cuenta satisfactoria el 2026-11-15. No se verificaron todas las operaciones.",
+      "alcance": "Disponible en la sesión de Codex; no hay credenciales API exportadas."
+    },
+    {
+      "id": "google-drive",
+      "tipo": "plugin-conectado",
+      "estado": "perfil-verificado",
+      "prueba": "Consulta de perfil de cuenta satisfactoria el 2026-11-15. No se verificaron todas las operaciones.",
+      "alcance": "Disponible en la sesión de Codex; no hay credenciales API exportadas."
+    },
+    {
+      "id": "gmail",
+      "tipo": "plugin-conectado",
+      "estado": "perfil-verificado",
+      "prueba": "Consulta de perfil de cuenta satisfactoria el 2026-11-15. No se verificaron todas las operaciones.",
+      "alcance": "Disponible en la sesión de Codex; no hay credenciales API exportadas."
+    },
+    {
+      "id": "google-calendar",
+      "tipo": "plugin-conectado",
+      "estado": "perfil-verificado",
+      "prueba": "Consulta de perfil de cuenta satisfactoria el 2026-11-15. No se verificaron todas las operaciones.",
+      "alcance": "Disponible en la sesión de Codex; no hay credenciales API exportadas."
+    },
+    {
+      "id": "documentos",
+      "tipo": "plugins-runtime",
+      "estado": "herramientas-y-skills-disponibles",
+      "alcance": "Word, PDF, PowerPoint, hojas de cálculo; carga bajo demanda, sin prueba de creación de cada formato en esta tarea."
+    },
+    {
+      "id": "desktop",
+      "tipo": "plugin-runtime",
+      "estado": "herramientas-y-skills-disponibles",
+      "alcance": "Control de apps mediante las herramientas habilitadas, sin prueba de una app concreta."
+    },
+    {
+      "id": "vercel",
+      "tipo": "plugin-runtime",
+      "estado": "herramientas-disponibles-sin-prueba-de-cuenta",
+      "alcance": "Verificar cuenta y proyecto antes de operar; no se modificó infraestructura."
+    },
+    {
+      "id": "supabase",
+      "tipo": "plugin-runtime",
+      "estado": "herramientas-disponibles-sin-prueba-de-cuenta",
+      "alcance": "Verificar cuenta y proyecto antes de operar; no se modificó infraestructura."
+    },
+    {
+      "id": "ocr-local",
+      "tipo": "herramienta-candidata",
+      "estado": "instalacion-no-localizada",
+      "alcance": "formatos.md menciona UniversidadTools; la búsqueda acotada no verificó ese entorno. MarkItDown y PaddleOCR no se ejecutaron."
+    },
+    {
+      "id": "opengym",
+      "tipo": "proyecto-local-candidato",
+      "estado": "sin-integracion",
+      "ruta": "../Personal-OS/apps/gym",
+      "fuente": "https://github.com/DuarteSantos8/openGym",
+      "alcance": "Solo inventario de directorios; licencia AGPL del upstream, sin código copiado."
+    },
+    {
+      "id": "fuentes-publicas",
+      "tipo": "busqueda-web",
+      "estado": "herramienta-disponible",
+      "alcance": "Fuentes primarias actuales según el encargo, sin subir documentos personales."
+    },
+    {
+      "id": "garmin",
+      "tipo": "capacidad-planeada",
+      "estado": "sin-integracion-verificada",
+      "alcance": "No se añadieron credenciales, servidores, acceso remoto ni acciones automáticas."
+    },
+    {
+      "id": "homelab",
+      "tipo": "capacidad-planeada",
+      "estado": "sin-integracion-verificada",
+      "alcance": "No se añadieron credenciales, servidores, acceso remoto ni acciones automáticas."
+    },
+    {
+      "id": "banca",
+      "tipo": "capacidad-planeada",
+      "estado": "sin-integracion-verificada",
+      "alcance": "No se añadieron credenciales, servidores, acceso remoto ni acciones automáticas."
+    },
+    {
+      "id": "redes-sociales",
+      "tipo": "capacidad-planeada",
+      "estado": "sin-integracion-verificada",
+      "alcance": "No se añadieron credenciales, servidores, acceso remoto ni acciones automáticas."
+    },
+    {
+      "id": "crm",
+      "tipo": "capacidad-planeada",
+      "estado": "sin-integracion-verificada",
+      "alcance": "No se añadieron credenciales, servidores, acceso remoto ni acciones automáticas."
+    }
+  ]
+}

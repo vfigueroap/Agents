@@ -1,0 +1,11 @@
+{
+  "catalogo": "../../conexiones/catalogo.json",
+  "permitidas_por_proposito": [
+    "archivos-locales",
+    "google-drive",
+    "google-calendar",
+    "documentos",
+    "ocr-local"
+  ],
+  "nota": "Selección de capacidades pertinentes; no concede permisos ni crea conexiones."
+}

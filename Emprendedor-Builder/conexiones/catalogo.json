@@ -1,0 +1,12 @@
+{
+  "catalogo": "../../conexiones/catalogo.json",
+  "permitidas_por_proposito": [
+    "archivos-locales",
+    "github",
+    "google-drive",
+    "google-calendar",
+    "vercel",
+    "supabase"
+  ],
+  "nota": "Selección de capacidades pertinentes; no concede permisos ni crea conexiones."
+}

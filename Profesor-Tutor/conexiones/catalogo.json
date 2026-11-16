@@ -1,0 +1,9 @@
+{
+  "catalogo": "../../conexiones/catalogo.json",
+  "permitidas_por_proposito": [
+    "archivos-locales",
+    "google-drive",
+    "documentos"
+  ],
+  "nota": "Selección de capacidades pertinentes; no concede permisos ni crea conexiones."
+}

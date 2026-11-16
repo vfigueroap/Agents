@@ -1,0 +1,8 @@
+{
+  "catalogo": "../../conexiones/catalogo.json",
+  "permitidas_por_proposito": [
+    "archivos-locales",
+    "documentos"
+  ],
+  "nota": "Selección de capacidades pertinentes; no concede permisos ni crea conexiones."
+}

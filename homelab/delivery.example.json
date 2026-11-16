@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "id": "fc6cd528-85d8-4a42-b9a6-73e526401cc1",
+  "area": "work",
+  "source": "example:synthetic",
+  "observed_at": "2026-01-01T12:00:00Z",
+  "summary": "EJEMPLO SINTÉTICO para validar el contrato; no describe las finanzas del propietario ni debe publicarse en su cuenta.",
+  "metrics": [],
+  "items": [{ "id": "example-review", "title": "Ejemplo sintético de revisión pendiente", "kind": "next", "status": "draft", "source_ref": "example:statement" }],
+  "references": [{ "source": "example-only", "local_ref": "sha256:0123456789abcdef" }],
+  "valuations": [{ "account_ref": "example-account", "name": "Cuenta ficticia de prueba", "kind": "asset", "currency": "CLP", "amount_minor": 100000, "valued_at": "2026-01-01T12:00:00Z", "source_ref": "example:statement" }]
+}

@@ -3,14 +3,6 @@
 /privado/
 /floorplan/
 /contextomaestrodelproyecto.md
-/Abogado en practica/
-/Administrador de sistemas/
-/Compañero de Universidad/
-/Desarrollador de software/
-/Emprendedor-Builder/
-/Ingeniero/
-/Marketero/
-/Profesor-Tutor/
 
 # Credenciales, datos y productos derivados
 .env
@@ -35,3 +27,18 @@ generated/
 *.log
 .DS_Store
 Thumbs.db
+
+# Entregables locales
+/salidas/
+/outputs/
+
+
+# Memoria y tareas personales permanecen locales
+**/reportes/**
+!**/reportes/
+!**/reportes/README.md
+**/.agents/*.lock
+**/.agents/*.tmp
+
+# Inventario privado de este equipo
+/.agents/recursos-locales.json
